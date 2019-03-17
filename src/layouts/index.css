@@ -1,7 +1,7 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
-}
+} */
 
 *,
 *::before,
@@ -10,7 +10,7 @@
 }
 
 html {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-size: 62.5%;
   /* 1 rem = 10px,  10px/16px= 62.5% */
 }
@@ -27,4 +27,43 @@ a {
   color: #5334f5;
   font-weight: 600;
   text-decoration: none;
+}
+
+.Hero {
+  background: url('../images/wallpaper3.jpg');
+  height: 92rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.HeroGroup {
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 15rem 5rem;
+  text-align: center;
+}
+/* Following selection is viable only when we only have one h1 tag inside of the class, otherwise h1 tag shoud have its own class. */
+
+.Hero h1 {
+  margin: 0;
+  color: white;
+  font-size: 6rem;
+  line-height: 1.2;
+}
+
+.Hero p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.Hero a {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.9rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
 }
