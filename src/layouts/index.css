@@ -34,6 +34,7 @@ a {
   height: 92rem;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .HeroGroup {
@@ -106,4 +107,10 @@ a {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.Hero svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
