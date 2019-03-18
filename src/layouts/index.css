@@ -114,3 +114,20 @@ a {
   bottom: 0;
   left: 0;
 }
+
+.Hero .Logos {
+  margin: 7rem 0;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  /* width: 60rem; */
+  align-items: center;
+  justify-content: center;
+  grid-gap: 2rem;
+}
+
+@media (max-width: 640px) {
+  .Hero .Logos {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+}
