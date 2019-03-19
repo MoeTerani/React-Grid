@@ -125,9 +125,45 @@ a {
   grid-gap: 2rem;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 740px) {
   .Hero .Logos {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+  }
+}
+.Cards {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  justify-content: space-evenly;
+}
+.Cards h2 {
+  margin: 5rem 2rem;
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(104deg, #050a27 0%, #9297b5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.CardGroup {
+  margin: 5rem 0 10rem;
+  max-width: 110rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+  justify-items: center;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 1060px) {
+  .CardGroup {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 735px) {
+  .CardGroup {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

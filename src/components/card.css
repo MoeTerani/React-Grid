@@ -1,0 +1,46 @@
+.Card {
+  width: 30rem;
+  height: 22.5rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+
+  display: grid;
+  grid-template-rows: (2, 1fr);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Card:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.5);
+}
+
+.Card:hover img {
+  transform: translateY(2rem);
+  border-radius: 2rem;
+}
+
+.Card img {
+  position: absolute;
+  bottom: 0;
+  height: 110%;
+  z-index: -1;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Card h3 {
+  color: white;
+  font-size: 3rem;
+  margin: 2rem 0 0 2rem;
+  width: 19rem;
+}
+
+.Card p {
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  align-self: flex-end;
+  margin: 0 0 2rem 2rem;
+}
