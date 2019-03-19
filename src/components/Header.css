@@ -3,6 +3,14 @@
   width: 100%;
   padding: 5rem 0;
   z-index: 100;
+  transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.HeaderScrolled {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1.5rem 0;
+  /* -- Only works for Safari , background blur. */
+  background-filter: blur(20px);
 }
 
 .HeaderGroup {
