@@ -3,6 +3,30 @@ import Link from 'gatsby-link'
 import Card from '../components/card'
 import Section from '../components/Section'
 import Wave from '../components/Wave'
+import staticdata from '../../staticdata.json'
+import Cell from '../components/Cell'
+import styled from 'styled-components'
+
+const SectionCaption = styled.p`
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #94a4ba;
+`
+
+const SectionCellGroup = styled.div`
+  max-width: 80rem;
+  margin: 0 auto 10rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+
+  @media (max-width: 800px) {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+`
 
 const IndexPage = () => (
   <div>
@@ -107,6 +131,13 @@ const IndexPage = () => (
       title="React for Beginners"
       text="Learn how to build a modern site using React and the most efficient libraries to get your site/product online. Get familiar with components, Grid CSS, animations, interactions, dynamic data with Contentful and deploying your site with Netlify."
     />
+
+    <SectionCaption>12 sections - 6 hours</SectionCaption>
+    <SectionCellGroup>
+      {staticdata.cells.map(cell => (
+        <Cell title={cell.title} image={cell.image} />
+      ))}
+    </SectionCellGroup>
   </div>
 )
 
